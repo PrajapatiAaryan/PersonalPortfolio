@@ -49,6 +49,7 @@ const Projectpage = () => {
       link: "https://prajapatiaaryan.netlify.app/",
       technology: "HTML, CSS, JS",
     },
+    
   ];
   const categories = ["All", "HTML, CSS, JS", "React + Tailwind", "Node.js"];
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -94,7 +95,7 @@ const Projectpage = () => {
 
       <div className="xl:px-32 w-full flex justify-center items-center">
         {/* laptop view */}
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8">
+        <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8">
           {filterprojects.map((item, idx) => (
             <div
               key={idx}
@@ -136,16 +137,6 @@ const Projectpage = () => {
         </div>
          
 
-
-
-
-
-
-
-
-
-
-        
         {/* mobiel / tablet view */}
         <div className="lg:hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-8 ">
           {filterprojects.map((item, idx) => (
