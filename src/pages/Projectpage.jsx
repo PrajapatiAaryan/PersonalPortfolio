@@ -1,57 +1,75 @@
 import React, { useState } from "react";
 const Projectpage = () => {
   const projectsData = [
-    {
-      name: "Real Estate Website UI",
-      detail:
-        "A sleek and responsive real estate website UI built with React and Tailwind CSS, featuring property listings, filters, and a modern layout for an engaging user experience.",
-      imgsrc: "/project1.png",
-      link: "https://findhouse-indol.vercel.app/",
-      technology: "React + Tailwind",
-    },
-    {
-      name: "Expense Tracker Web App",
-      detail:
-        "A modern and responsive expense tracking application built with React and Tailwind CSS. Users can add, edit, and delete transactions, and visualize their spending through interactive bar and pie charts. Includes a clean UI, dark/light theme toggle, and localStorage for data persistence without a backend.",
-      imgsrc: "/project2.png",
-      link: "https://expensetracker-liard-ten.vercel.app/",
-      technology: "React + Tailwind",
-    },
-    {
-      name: "Landing Page Website",
-      detail:
-        "A visually appealing and responsive landing page built with HTML, CSS, and JavaScript, showcasing clean design and smooth user interface transitions.",
-      imgsrc: "/project3.png",
-      link: "https://octanet-augest-task1.vercel.app/",
-      technology: "React + Tailwind",
-    },
-    {
-      name: "To-Do List App",
-      detail:
-        "A simple and efficient to-do list web app using HTML, CSS, and JavaScript, allowing users to add, complete, and delete tasks with a clean user interface.",
-      imgsrc: "/project4.png",
-      link: "https://octanet-august-task2.vercel.app/",
-      technology: "React + Tailwind",
-    },
-    {
-      name: "E-Commerce Website",
-      detail: `A fully functional eCommerce website built with the MERN stack, featuring product listings, cart management, and a smooth shopping experience.`,
-      imgsrc: "/project5.png",
-      link: "https://drive.google.com/file/d/1nfXu_R7oUDzdM3xshQuWmc-4c0lN5p7P/view?usp=sharing",
-      link2: "https://drive.google.com/file/d/1UczZS8K1t5RZn6Obtqcc2-kZOzSPn2zL/view?usp=sharing",
-      technology: "Node.js",
-    },
-    {
-      name: "Personal Portfolio Website",
-      detail:
-        "A responsive portfolio website showcasing projects, skills, and services, built with React and Tailwind CSS to highlight web development expertise and personal branding.",
-      imgsrc: "/project8.png",
-      link: "https://prajapatiaaryan.netlify.app/",
-      technology: "HTML, CSS, JS",
-    },
-    
-  ];
-  const categories = ["All", "HTML, CSS, JS", "React + Tailwind", "Node.js"];
+  {
+    name: "Real Estate Website UI",
+    detail:
+      "A sleek and responsive real estate website UI built with React and Tailwind CSS, featuring property listings, filters, and a modern layout for an engaging user experience.",
+    imgsrc: "/project1.png",
+    link: "https://findhouse-indol.vercel.app/",
+    technology: "React + Tailwind",
+  },
+  {
+    name: "Expense Tracker Web App",
+    detail:
+      "A modern and responsive expense tracking application built with React and Tailwind CSS. Users can add, edit, and delete transactions, and visualize their spending through interactive bar and pie charts. Includes a clean UI, dark/light theme toggle, and localStorage for data persistence without a backend.",
+    imgsrc: "/project2.png",
+    link: "https://expensetracker-liard-ten.vercel.app/",
+    technology: "React + Tailwind",
+  },
+  {
+    name: "Landing Page Website",
+    detail:
+      "A visually appealing and responsive landing page built with HTML, CSS, and JavaScript, showcasing clean design and smooth user interface transitions.",
+    imgsrc: "/project3.png",
+    link: "https://octanet-augest-task1.vercel.app/",
+    technology: "React + Tailwind",
+  },
+  {
+    name: "To-Do List App",
+    detail:
+      "A simple and efficient to-do list web app using HTML, CSS, and JavaScript, allowing users to add, complete, and delete tasks with a clean user interface.",
+    imgsrc: "/project4.png",
+    link: "https://octanet-august-task2.vercel.app/",
+    technology: "React + Tailwind",
+  },
+  {
+    name: "E-Commerce Website",
+    detail:
+      "A fully functional eCommerce website built with the MERN stack, featuring product listings, cart management, and a smooth shopping experience.",
+    imgsrc: "/project5.png",
+    link: "https://drive.google.com/file/d/1nfXu_R7oUDzdM3xshQuWmc-4c0lN5p7P/view?usp=sharing",
+    link2: "https://drive.google.com/file/d/1UczZS8K1t5RZn6Obtqcc2-kZOzSPn2zL/view?usp=sharing",
+    technology: "Full Stack",
+  },
+  {
+    name: "Personal Portfolio Website",
+    detail:
+      "A responsive portfolio website showcasing projects, skills, and services, built with React and Tailwind CSS to highlight web development expertise and personal branding.",
+    imgsrc: "/project8.png",
+    link: "https://prajapatiaaryan.netlify.app/",
+    technology: "HTML, CSS, JS",
+  },
+  {
+    name: "Task Management System",
+    detail:
+      "A role-based task management system built with React, Node.js, Express, and MySQL. Features three user roles: Admin, Manager, and User. Admin can assign tasks to users, monitor project status, and track progress effectively.",
+    imgsrc: "/project7.png",
+    link: "https://drive.google.com/file/d/1b8COIGxY5JpSCWFb2QxiNK7HXMKxaTyA/view?usp=sharing",
+    technology: "Full Stack",
+  },
+  {
+    name: "Mantra Lekhan Website",
+    detail:
+      "A real-time mantra typing web application developed for a live project. It includes an admin panel to monitor users' mantra counts and details. Users must type a specific mantra without copy-paste or autocomplete for it to be counted.",
+    imgsrc: "/project6.png",
+    link: "https://mantralekhan.balkrushna.com/",
+    technology: "Full Stack",
+  },
+];
+
+
+  const categories = ["All", "HTML, CSS, JS", "React + Tailwind", "Full Stack"];
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [filter, setfilter] = useState("All");
   const filterprojects =

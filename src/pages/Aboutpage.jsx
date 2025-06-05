@@ -73,7 +73,7 @@ const Aboutpage = () => {
                 </div>
               </div>
               <div className="px-4 py-2 pb-5 pt-5">
-                <a target="_blank" href="/cv1.pdf">
+                <a target="_blank" href="/cv2.pdf">
                 <button
                   // onClick={handleDownload}
                   className="flex justify-center px-4 py-3 border border-cyan-400 rounded-xl bg-gradient-to-r from-orange-700 to-purple-700 text-white text-xl  cursor-pointer hover:scale-110 shadow-md shadow-yellow-500 transition-all duration-500"
