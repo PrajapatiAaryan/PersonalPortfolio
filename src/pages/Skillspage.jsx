@@ -13,6 +13,7 @@ const Skillspage = () => {
     { name: "Tailwind Css", imgsrc: "/tailwind.png" },
     { name: "Python ", imgsrc: "/python.jpeg" },
     { name: "Bootstrap ", imgsrc: "/bootstrap.jpeg" },
+    { name: "Java ", imgsrc: "/java.png" },
   ];
 
   return (
